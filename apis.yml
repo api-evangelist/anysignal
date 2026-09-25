@@ -1,23 +1,66 @@
 aid: anysignal
+
 name: AnySignal
-description: 'AnySignal is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.anysignal.com/og-default.png
+
+description: 'AnySignal provides an end-to-end RF platform delivering spectrum supremacy across mission‑critical environments. Their solutions enable reliable, low‑latency communications for space, land, air, and sea, supporting aerospace, defense, and national security customers with hardware, software, and orchestration tools.'
+
 url: https://raw.githubusercontent.com/api-evangelist/anysignal/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
 - Company
-apis: []
+- RF
+- Spectrum
+- Aerospace
+- Defense
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/anysignal-hosts.yml
+- type: Vendors
+  url: vendors/anysignal-vendors.yml
+- type: GitHubOrganization
+  url: https://github.com/AnySignal
+- type: DomainSecurity
+  url: security/anysignal-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.anysignal.com/
+- type: Blog
+  url: https://www.anysignal.com/news/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-09-25'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
