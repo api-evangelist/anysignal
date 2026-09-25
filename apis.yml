@@ -4,7 +4,7 @@ name: AnySignal
 
 image: https://www.anysignal.com/og-default.png
 
-description: 'AnySignal provides an end-to-end RF platform delivering spectrum supremacy across mission‑critical environments. Their solutions enable reliable, low‑latency communications for space, land, air, and sea, supporting aerospace, defense, and national security customers with hardware, software, and orchestration tools.'
+description: 'AnySignal delivers an end‑to‑end RF platform that provides spectrum supremacy for mission‑critical environments across space, land, air, and sea. Their solutions combine hardware, software, and orchestration tools to enable reliable, low‑latency communications for aerospace, defense, and national security customers. The platform includes capabilities such as communications, electronic warfare, autonomous systems, radar, and a resilient network, supporting both commercial and government missions.'
 
 url: https://raw.githubusercontent.com/api-evangelist/anysignal/refs/heads/main/apis.yml
 
@@ -51,16 +51,16 @@ common:
 apis: []
 
 x-coverage:
-  state: none
-  reason: no-developer-program
-  method: derived
-  generated: '2026-09-25'
-  generator: derive-coverage.py (pre-flight evidence)
-  detail: >-
-    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: API host https://api.anysignal.com did not return a spec and no docs host is identified.
+  evidence:
+  - url: https://api.anysignal.com
+    status: timeout
+  checked: '2026-09-25'
 x-enrichment:
   date: '2026-09-25'
-  status: enriched
-  artifacts_added: 5
+  status: nochange
+  artifacts_added: 0
   pass: modular-v1
   engine: identity=local,contract=local,surfaces=local,docs=local
